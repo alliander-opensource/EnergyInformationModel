@@ -1,9 +1,9 @@
 @prefix : <https://w3id.org/energyinformationmodel/ontology/core#> .
-@prefix p0: <https://w3id.org/energyinformationmodel/ontology/core> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix eimc: <https://w3id.org/energyinformationmodel/ontology/core> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @base <https://w3id.org/energyinformationmodel/ontology/core> .
 
@@ -29,12 +29,20 @@
 #    Object Properties
 #################################################################
 
+###  https://w3id.org/energyinformationmodel/ontology/core#c88cde8a_ebcc_483f_9e64_e76f095d7e0e
+:c88cde8a_ebcc_483f_9e64_e76f095d7e0e rdf:type owl:ObjectProperty ;
+                                      rdfs:domain :c277f37c_c697_4522_9558_16d98edb8ab1 ;
+                                      rdfs:range <http://www.iec.ch/TC57/CIM#Asset> ;
+                                      rdfs:label "ImplementedByAsset"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "Relates the energy system resource to the asset that implements it."@en .
+
+
 ###  https://w3id.org/energyinformationmodel/ontology/core#dc955e18_f1c8_4c8b_8f4a_d41565526307
 :dc955e18_f1c8_4c8b_8f4a_d41565526307 rdf:type owl:ObjectProperty ;
                                       owl:inverseOf <https://w3id.org/energyinformationmodel/ontology/core#43bdc0e6_3c6d_4d85_b7c1_4a5bc0e93812> ;
                                       rdfs:domain :a8bec9fa_deb6_4fe9_8726_0b8b6208fa73 ;
                                       rdfs:range :b54a2641_b1fa_46d4_8bd5_24161660e542 ;
-                                      rdfs:label "ConnectsConnectivityNode"@nl ;
+                                      rdfs:label "ConnectsConnectivityNode"@en ;
                                       <http://www.w3.org/2004/02/skos/core#definition> "Defines the relationship to the connectivity node that this terminal is connected to"@en .
 
 
@@ -44,6 +52,11 @@
                                                                                              rdfs:range :a8bec9fa_deb6_4fe9_8726_0b8b6208fa73 ;
                                                                                              rdfs:label "ConnectsTerminals"@nl ;
                                                                                              <http://www.w3.org/2004/02/skos/core#definition> "The relationship that defines the terminals that are connected through this connectivity node"@en .
+
+
+###  https://w3id.org/energyinformationmodel/ontology/core#989c262b_4f54_4b2d_b9eb_5c92bf81ec7a
+<https://w3id.org/energyinformationmodel/ontology/core#989c262b_4f54_4b2d_b9eb_5c92bf81ec7a> rdf:type owl:ObjectProperty ;
+                                                                                             rdfs:label "ImplementsFunction"@en .
 
 
 #################################################################
@@ -75,7 +88,7 @@
 ###  https://w3id.org/energyinformationmodel/ontology/core#b54a2641_b1fa_46d4_8bd5_24161660e542
 :b54a2641_b1fa_46d4_8bd5_24161660e542 rdf:type owl:Class ;
                                       rdfs:subClassOf <http://www.iec.ch/TC57/CIM#IdentifiedObject> ;
-                                      rdfs:label "ConnectivityNode"@nl ;
+                                      rdfs:label "ConnectivityNode"@en ;
                                       <http://www.w3.org/2004/02/skos/core#definition> "Connectivity nodes are points where terminals of primary equipment s are connected together with zero energy loss."@en ;
                                       <http://www.w3.org/2004/02/skos/core#editorialNote> "Generic energy system definition of http://www.iec.ch/TC57/CIM#ConnectivityNode"@en .
 
