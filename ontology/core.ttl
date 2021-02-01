@@ -1,0 +1,93 @@
+@prefix : <https://w3id.org/energyinformationmodel/ontology/core#> .
+@prefix p0: <https://w3id.org/energyinformationmodel/ontology/core> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/energyinformationmodel/ontology/core> .
+
+<https://w3id.org/energyinformationmodel/ontology/core> rdf:type owl:Ontology ;
+                                                         owl:versionIRI <https://w3id.org/energyinformationmodel/ontology/core/0.0.1> ;
+                                                         rdfs:comment "Core concept ontology for the Energy Information Model" ;
+                                                         rdfs:seeAlso <http://www.iec.ch/TC57/CIM#> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#editorialNote
+<http://www.w3.org/2004/02/skos/core#editorialNote> rdf:type owl:AnnotationProperty ;
+                                                    rdfs:subPropertyOf rdfs:seeAlso .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/energyinformationmodel/ontology/core#dc955e18_f1c8_4c8b_8f4a_d41565526307
+:dc955e18_f1c8_4c8b_8f4a_d41565526307 rdf:type owl:ObjectProperty ;
+                                      owl:inverseOf <https://w3id.org/energyinformationmodel/ontology/core#43bdc0e6_3c6d_4d85_b7c1_4a5bc0e93812> ;
+                                      rdfs:domain :a8bec9fa_deb6_4fe9_8726_0b8b6208fa73 ;
+                                      rdfs:range :b54a2641_b1fa_46d4_8bd5_24161660e542 ;
+                                      rdfs:label "ConnectsConnectivityNode"@nl ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "Defines the relationship to the connectivity node that this terminal is connected to"@en .
+
+
+###  https://w3id.org/energyinformationmodel/ontology/core#43bdc0e6_3c6d_4d85_b7c1_4a5bc0e93812
+<https://w3id.org/energyinformationmodel/ontology/core#43bdc0e6_3c6d_4d85_b7c1_4a5bc0e93812> rdf:type owl:ObjectProperty ;
+                                                                                             rdfs:domain :b54a2641_b1fa_46d4_8bd5_24161660e542 ;
+                                                                                             rdfs:range :a8bec9fa_deb6_4fe9_8726_0b8b6208fa73 ;
+                                                                                             rdfs:label "ConnectsTerminals"@nl ;
+                                                                                             <http://www.w3.org/2004/02/skos/core#definition> "The relationship that defines the terminals that are connected through this connectivity node"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.iec.ch/TC57/CIM#Asset
+<http://www.iec.ch/TC57/CIM#Asset> rdf:type owl:Class ;
+                                   rdfs:subClassOf <http://www.iec.ch/TC57/CIM#IdentifiedObject> ;
+                                   rdfs:isDefinedBy <http://www.iec.ch/TC57/CIM#> .
+
+
+###  http://www.iec.ch/TC57/CIM#IdentifiedObject
+<http://www.iec.ch/TC57/CIM#IdentifiedObject> rdf:type owl:Class ;
+                                              rdfs:isDefinedBy <http://www.iec.ch/TC57/CIM#> ;
+                                              rdfs:label "Geïdentificeerd Object"@nl ,
+                                                         "IdentifiedObject"@nl .
+
+
+###  https://w3id.org/energyinformationmodel/ontology/core#a8bec9fa_deb6_4fe9_8726_0b8b6208fa73
+:a8bec9fa_deb6_4fe9_8726_0b8b6208fa73 rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://www.iec.ch/TC57/CIM#IdentifiedObject> ;
+                                      rdfs:label "Terminal"@en ;
+                                      rdfs:seeAlso <http://www.iec.ch/TC57/CIM#ACDCTerminal> ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "The energy connection (the 'end') to a primary energy system function."@en ;
+                                      <http://www.w3.org/2004/02/skos/core#editorialNote> "Generic Energy System definition of http://www.iec.ch/TC57/CIM#ACDCTerminal"@en .
+
+
+###  https://w3id.org/energyinformationmodel/ontology/core#b54a2641_b1fa_46d4_8bd5_24161660e542
+:b54a2641_b1fa_46d4_8bd5_24161660e542 rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://www.iec.ch/TC57/CIM#IdentifiedObject> ;
+                                      rdfs:label "ConnectivityNode"@nl ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "Connectivity nodes are points where terminals of primary equipment s are connected together with zero energy loss."@en ;
+                                      <http://www.w3.org/2004/02/skos/core#editorialNote> "Generic energy system definition of http://www.iec.ch/TC57/CIM#ConnectivityNode"@en .
+
+
+###  https://w3id.org/energyinformationmodel/ontology/core#c277f37c_c697_4522_9558_16d98edb8ab1
+:c277f37c_c697_4522_9558_16d98edb8ab1 rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://www.iec.ch/TC57/CIM#IdentifiedObject> ;
+                                      rdfs:label "EnergieSysteemFunctie"@nl ,
+                                                 "EnergySystemResource"@en ;
+                                      rdfs:seeAlso <http://www.iec.ch/TC57/CIM#PowerSystemResource> ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "The Energy System Resource defines the functional elements of the energy system. The fysical stuff with which these functions are implemented are modelled by http://www.iec.ch/TC57/CIM#Asset."@en ;
+                                      <http://www.w3.org/2004/02/skos/core#editorialNote> "Generic energy system definition of  http://www.iec.ch/TC57/CIM#PowerSystemResource"@en .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
