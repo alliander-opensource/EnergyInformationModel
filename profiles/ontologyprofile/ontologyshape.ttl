@@ -1,0 +1,75 @@
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#>
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> 
+@prefix :   <https://w3id.org/EnergyInformationModel/profiles/ontologyprofile/ontologyshape#> .
+
+
+
+
+
+################################################################
+####  sh:NodeShapes
+###############################################################
+:ClassShape
+    a sh:NodeShape ;
+    sh:targetClass owl:Class ;
+    sh:property :PrefLabelShape ;
+    sh:property :DefinitionShape.
+    
+:ObjectPropertyShape
+    a sh:NodeShape ;
+    sh:targetClass owl:ObjectProperty ;
+    sh:property :PrefLabelShape ;
+    sh:property :DefinitionShape ;
+    sh:property :DomainShape
+    sh:property [
+        rdfs:comment "At least one range is defined to ensure correct transformation to OO artifacts"@en;
+        sh:path rdfs:range ;
+        sh:node :ClassShape ;
+        sh:minCount 1 ;
+    ] .
+
+
+
+:DatatypePropertyShape
+    a sh:NodeShape ;
+    sh:targetClass owl:DatatypeProperty ;
+    sh:property :PrefLabelShape ;
+    sh:property :DefinitionShape ;
+    sh:property [
+        rdfs:comment "At least one range is defined to ensure correct transformation to OO artifacts"@en;
+        sh:path rdfs:range ;
+        sh:minCount 1 ;
+    ].
+
+
+################################################################
+####  sh:PropertyShapes
+###############################################################
+
+
+:PrefLabelShape 
+    a sh:PropertyShape   ;
+    rdfs:comment "Any class has at most one prefLabel for each language, each class has at least one prefLabel in one language"@en;
+    sh:path skos:prefLabel ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 .
+
+:DefinitionShape 
+    a sh:PropertyShape ;
+    rdfs:comment "Any resource has at least one definition in one language"@en ;
+    sh:path skos:definition ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 .
+
+:DomainShape 
+    a sh:PropertyShape ;
+    rdfs:comment "At least one domain is defined to ensure correct transformation to OO artifacts"@en;
+    sh:path rdfs:domain ;
+    sh:node :ClassShape ;
+    sh:minCount 1 ;
