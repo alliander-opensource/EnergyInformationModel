@@ -1,4 +1,4 @@
-@prefix : <https://w3id.org/EnergyInformationModel/ontology/networks/primarycomponents#> .
+@prefix : <https://w3id.org/EnergyInformationModel/ontology/network/primarycomponents#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -50,47 +50,47 @@
 <https://w3id.org/EnergyInformationModel/ontology/core#95194981_485f_4850_b1b3_d6e684529a99> rdf:type owl:ObjectProperty .
 
 
-###  https://w3id.org/EnergyInformationModel/ontology/networks/primarycomponents#f4817738_268e_47ab_bd9f_070880fa1d9f
+###  https://w3id.org/EnergyInformationModel/ontology/network/primarycomponents#f4817738_268e_47ab_bd9f_070880fa1d9f
 :f4817738_268e_47ab_bd9f_070880fa1d9f rdf:type owl:ObjectProperty ;
                                       rdfs:subPropertyOf <https://w3id.org/EnergyInformationModel/ontology/core#95194981_485f_4850_b1b3_d6e684529a99> ;
-                                      owl:inverseOf <https://w3id.org/EnergyInformationModel/ontology/networks/primarycomponents#78ce8fb9_61e5_4bd3_8453_c93d9da4a6f4> ;
-                                      rdfs:domain <https://w3id.org/EnergyInformationModel/ontology/networks/primarycomponents#6b198bd1_3cd5_449b_9447_23f7fa839b52> ;
-                                      rdfs:range <https://w3id.org/EnergyInformationModel/ontology/networks/primarycomponents#521235f9_146a_40f6_951a_04f0b06b2aa2> ;
+                                      owl:inverseOf <https://w3id.org/EnergyInformationModel/ontology/network/primarycomponents#78ce8fb9_61e5_4bd3_8453_c93d9da4a6f4> ;
+                                      rdfs:domain <https://w3id.org/EnergyInformationModel/ontology/network/primarycomponents#6b198bd1_3cd5_449b_9447_23f7fa839b52> ;
+                                      rdfs:range <https://w3id.org/EnergyInformationModel/ontology/network/primarycomponents#521235f9_146a_40f6_951a_04f0b06b2aa2> ;
                                       <http://www.w3.org/2004/02/skos/core#definition> "Relates the Transformer to its TransformerEnds"@en ;
                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "HasTransformerEnds"@en .
 
 
-###  https://w3id.org/EnergyInformationModel/ontology/networks/primarycomponents#fbaaff7e_67eb_45b7_882a_1f3d166ab849
+###  https://w3id.org/EnergyInformationModel/ontology/network/primarycomponents#fbaaff7e_67eb_45b7_882a_1f3d166ab849
 :fbaaff7e_67eb_45b7_882a_1f3d166ab849 rdf:type owl:ObjectProperty ;
-                                      rdfs:domain <https://w3id.org/EnergyInformationModel/ontology/networks/primarycomponents#1f327447_2de1_412e_bb40_1e548aed4467> ;
+                                      rdfs:domain <https://w3id.org/EnergyInformationModel/ontology/network/primarycomponents#1f327447_2de1_412e_bb40_1e548aed4467> ;
                                       rdfs:range <https://w3id.org/EnergyInformationModel/ontology/core#defcdc40_e2ec_4174_b9c8_a60992fdb317> ;
                                       <http://www.w3.org/2004/02/skos/core#definition> "Relates Primary Equipment and TopologicalNodes to the operational envelope at which they are operated"@en ;
                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "OperatedAt"@en .
 
 
-###  https://w3id.org/EnergyInformationModel/ontology/networks/primarycomponents#4d45d15d_4e95_4ecf_842e_70c49e78afca
-<https://w3id.org/EnergyInformationModel/ontology/networks/primarycomponents#4d45d15d_4e95_4ecf_842e_70c49e78afca> rdf:type owl:ObjectProperty ;
-                                                                                                                   rdfs:domain <https://w3id.org/EnergyInformationModel/ontology/networks/primarycomponents#521235f9_146a_40f6_951a_04f0b06b2aa2> ;
-                                                                                                                   rdfs:range eimc:a8bec9fa_deb6_4fe9_8726_0b8b6208fa73 ;
-                                                                                                                   <http://www.w3.org/2004/02/skos/core#definition> "Relates the TransformerEnd to one of the terminals of a Transformer so that it can be placed acurately  in a Network Model."@en ;
-                                                                                                                   <http://www.w3.org/2004/02/skos/core#prefLabel> "AtTerminal"@en .
+###  https://w3id.org/EnergyInformationModel/ontology/network/primarycomponents#4d45d15d_4e95_4ecf_842e_70c49e78afca
+<https://w3id.org/EnergyInformationModel/ontology/network/primarycomponents#4d45d15d_4e95_4ecf_842e_70c49e78afca> rdf:type owl:ObjectProperty ;
+                                                                                                                  rdfs:domain <https://w3id.org/EnergyInformationModel/ontology/network/primarycomponents#521235f9_146a_40f6_951a_04f0b06b2aa2> ;
+                                                                                                                  rdfs:range eimc:a8bec9fa_deb6_4fe9_8726_0b8b6208fa73 ;
+                                                                                                                  <http://www.w3.org/2004/02/skos/core#definition> "Relates the TransformerEnd to one of the terminals of a Transformer so that it can be placed acurately  in a Network Model."@en ;
+                                                                                                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "AtTerminal"@en .
 
 
-###  https://w3id.org/EnergyInformationModel/ontology/networks/primarycomponents#429f58a7_9065_4c0e_a2a3_009761f78b7e
-<https://w3id.org/EnergyInformationModel/ontology/networks/primarycomponents#429f58a7_9065_4c0e_a2a3_009761f78b7e> rdf:type owl:ObjectProperty ;
-                                                                                                                   rdfs:domain <https://w3id.org/EnergyInformationModel/ontology/networks/primarycomponents#1f327447_2de1_412e_bb40_1e548aed4467> ;
-                                                                                                                   rdfs:range eimc:a8bec9fa_deb6_4fe9_8726_0b8b6208fa73 ;
-                                                                                                                   <http://www.w3.org/2004/02/skos/core#definition> "Relates a Primary Equipment to its Terminals."@en ;
-                                                                                                                   <http://www.w3.org/2004/02/skos/core#prefLabel> "HasTerminals"@en .
+###  https://w3id.org/EnergyInformationModel/ontology/network/primarycomponents#429f58a7_9065_4c0e_a2a3_009761f78b7e
+<https://w3id.org/EnergyInformationModel/ontology/network/primarycomponents#429f58a7_9065_4c0e_a2a3_009761f78b7e> rdf:type owl:ObjectProperty ;
+                                                                                                                  rdfs:domain <https://w3id.org/EnergyInformationModel/ontology/network/primarycomponents#1f327447_2de1_412e_bb40_1e548aed4467> ;
+                                                                                                                  rdfs:range eimc:a8bec9fa_deb6_4fe9_8726_0b8b6208fa73 ;
+                                                                                                                  <http://www.w3.org/2004/02/skos/core#definition> "Relates a Primary Equipment to its Terminals."@en ;
+                                                                                                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "HasTerminals"@en .
 
 
-###  https://w3id.org/EnergyInformationModel/ontology/networks/primarycomponents#78ce8fb9_61e5_4bd3_8453_c93d9da4a6f4
-<https://w3id.org/EnergyInformationModel/ontology/networks/primarycomponents#78ce8fb9_61e5_4bd3_8453_c93d9da4a6f4> rdf:type owl:ObjectProperty ;
-                                                                                                                   rdfs:subPropertyOf <https://w3id.org/EnergyInformationModel/ontology/core#383fc6ce_402d_4c81_a4e8_dea9613d7a3e> ;
-                                                                                                                   rdfs:domain <https://w3id.org/EnergyInformationModel/ontology/networks/primarycomponents#521235f9_146a_40f6_951a_04f0b06b2aa2> ;
-                                                                                                                   rdfs:range <https://w3id.org/EnergyInformationModel/ontology/networks/primarycomponents#6b198bd1_3cd5_449b_9447_23f7fa839b52> ;
-                                                                                                                   <http://www.w3.org/2004/02/skos/core#definition> "Relates the Transformer to which the TransformerEnd belongs."@en ;
-                                                                                                                   <http://www.w3.org/2004/02/skos/core#prefLabel> "PartOfTransformer"@en .
+###  https://w3id.org/EnergyInformationModel/ontology/network/primarycomponents#78ce8fb9_61e5_4bd3_8453_c93d9da4a6f4
+<https://w3id.org/EnergyInformationModel/ontology/network/primarycomponents#78ce8fb9_61e5_4bd3_8453_c93d9da4a6f4> rdf:type owl:ObjectProperty ;
+                                                                                                                  rdfs:subPropertyOf <https://w3id.org/EnergyInformationModel/ontology/core#383fc6ce_402d_4c81_a4e8_dea9613d7a3e> ;
+                                                                                                                  rdfs:domain <https://w3id.org/EnergyInformationModel/ontology/network/primarycomponents#521235f9_146a_40f6_951a_04f0b06b2aa2> ;
+                                                                                                                  rdfs:range <https://w3id.org/EnergyInformationModel/ontology/network/primarycomponents#6b198bd1_3cd5_449b_9447_23f7fa839b52> ;
+                                                                                                                  <http://www.w3.org/2004/02/skos/core#definition> "Relates the Transformer to which the TransformerEnd belongs."@en ;
+                                                                                                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "PartOfTransformer"@en .
 
 
 #################################################################
@@ -105,71 +105,71 @@
 <https://w3id.org/EnergyInformationModel/ontology/core#2cd0f6fc_b577_427f_95bd_8dd439350c82> rdf:type owl:Class .
 
 
-###  https://w3id.org/EnergyInformationModel/ontology/networks/primarycomponents#f4574df8_5829_485f_8481_0f5a15a85eac
+###  https://w3id.org/EnergyInformationModel/ontology/network/primarycomponents#f4574df8_5829_485f_8481_0f5a15a85eac
 :f4574df8_5829_485f_8481_0f5a15a85eac rdf:type owl:Class ;
-                                      rdfs:subClassOf <https://w3id.org/EnergyInformationModel/ontology/networks/primarycomponents#1f327447_2de1_412e_bb40_1e548aed4467> ;
+                                      rdfs:subClassOf <https://w3id.org/EnergyInformationModel/ontology/network/primarycomponents#1f327447_2de1_412e_bb40_1e548aed4467> ;
                                       <http://www.w3.org/2004/02/skos/core#definition> "A primary equipment or group of primary equipment with negligible energy loss that serve to connect other primary equipmen and are modelled with a single logical terminal."@en ;
                                       <http://www.w3.org/2004/02/skos/core#editorialNote> "Generic energy system definition for http://www.iec.ch/TC57/CIM#Connector"@en ;
                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "Connector"@en ,
                                                                                       "Koppelfunctie"@nl .
 
 
-###  https://w3id.org/EnergyInformationModel/ontology/networks/primarycomponents#1f327447_2de1_412e_bb40_1e548aed4467
-<https://w3id.org/EnergyInformationModel/ontology/networks/primarycomponents#1f327447_2de1_412e_bb40_1e548aed4467> rdf:type owl:Class ;
-                                                                                                                   rdfs:subClassOf <https://w3id.org/EnergyInformationModel/ontology/core#2cd0f6fc_b577_427f_95bd_8dd439350c82> ;
-                                                                                                                   <http://www.w3.org/2004/02/skos/core#definition> "Equipment that form the primary components of an energy infrastructure."@nl ;
-                                                                                                                   <http://www.w3.org/2004/02/skos/core#editorialNote> "Generic energy system definition of http://www.iec.ch/TC57/CIM#ConductingEquipment"@en ;
-                                                                                                                   <http://www.w3.org/2004/02/skos/core#prefLabel> "PrimaryEquipment"@en .
+###  https://w3id.org/EnergyInformationModel/ontology/network/primarycomponents#1f327447_2de1_412e_bb40_1e548aed4467
+<https://w3id.org/EnergyInformationModel/ontology/network/primarycomponents#1f327447_2de1_412e_bb40_1e548aed4467> rdf:type owl:Class ;
+                                                                                                                  rdfs:subClassOf <https://w3id.org/EnergyInformationModel/ontology/core#2cd0f6fc_b577_427f_95bd_8dd439350c82> ;
+                                                                                                                  <http://www.w3.org/2004/02/skos/core#definition> "Equipment that form the primary components of an energy infrastructure."@nl ;
+                                                                                                                  <http://www.w3.org/2004/02/skos/core#editorialNote> "Generic energy system definition of http://www.iec.ch/TC57/CIM#ConductingEquipment"@en ;
+                                                                                                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "PrimaryEquipment"@en .
 
 
-###  https://w3id.org/EnergyInformationModel/ontology/networks/primarycomponents#521235f9_146a_40f6_951a_04f0b06b2aa2
-<https://w3id.org/EnergyInformationModel/ontology/networks/primarycomponents#521235f9_146a_40f6_951a_04f0b06b2aa2> rdf:type owl:Class ;
-                                                                                                                   rdfs:subClassOf <http://www.iec.ch/TC57/CIM#IdentifiedObject> ;
-                                                                                                                   <http://www.w3.org/2004/02/skos/core#definition> """Transformers tansform the nature of the energy that passes through them. The TransformerEnd defines the 'side' of the transformer and therefore can be associated with a certain state variable.
+###  https://w3id.org/EnergyInformationModel/ontology/network/primarycomponents#521235f9_146a_40f6_951a_04f0b06b2aa2
+<https://w3id.org/EnergyInformationModel/ontology/network/primarycomponents#521235f9_146a_40f6_951a_04f0b06b2aa2> rdf:type owl:Class ;
+                                                                                                                  rdfs:subClassOf <http://www.iec.ch/TC57/CIM#IdentifiedObject> ;
+                                                                                                                  <http://www.w3.org/2004/02/skos/core#definition> """Transformers tansform the nature of the energy that passes through them. The TransformerEnd defines the 'side' of the transformer and therefore can be associated with a certain state variable.
 
 Examples include the 
 - high-voltage and low-voltage sides of a Power Transformer 
 - High pressure and the low pressure sides of of a compressor
 - the electric and hydrogen side of a fuel cell"""@en ;
-                                                                                                                   <http://www.w3.org/2004/02/skos/core#prefLabel> "TransformerEnd"@en .
+                                                                                                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "TransformerEnd"@en .
 
 
-###  https://w3id.org/EnergyInformationModel/ontology/networks/primarycomponents#6b198bd1_3cd5_449b_9447_23f7fa839b52
-<https://w3id.org/EnergyInformationModel/ontology/networks/primarycomponents#6b198bd1_3cd5_449b_9447_23f7fa839b52> rdf:type owl:Class ;
-                                                                                                                   rdfs:subClassOf <https://w3id.org/EnergyInformationModel/ontology/networks/primarycomponents#1f327447_2de1_412e_bb40_1e548aed4467> ;
-                                                                                                                   <http://www.w3.org/2004/02/skos/core#definition> "Primary equipment that intentionally alters the state variables or form of energy. Examples include Power Transformers. Compressors or Fuel Cells."@en ;
-                                                                                                                   <http://www.w3.org/2004/02/skos/core#editorialNote> "Generic energy system definition of http://www.iec.ch/TC57/CIM#PowerTransformer"@en ;
-                                                                                                                   <http://www.w3.org/2004/02/skos/core#prefLabel> "Transformatiefunctie"@nl ,
-                                                                                                                                                                   "Transformer"@en .
+###  https://w3id.org/EnergyInformationModel/ontology/network/primarycomponents#6b198bd1_3cd5_449b_9447_23f7fa839b52
+<https://w3id.org/EnergyInformationModel/ontology/network/primarycomponents#6b198bd1_3cd5_449b_9447_23f7fa839b52> rdf:type owl:Class ;
+                                                                                                                  rdfs:subClassOf <https://w3id.org/EnergyInformationModel/ontology/network/primarycomponents#1f327447_2de1_412e_bb40_1e548aed4467> ;
+                                                                                                                  <http://www.w3.org/2004/02/skos/core#definition> "Primary equipment that intentionally alters the state variables or form of energy. Examples include Power Transformers. Compressors or Fuel Cells."@en ;
+                                                                                                                  <http://www.w3.org/2004/02/skos/core#editorialNote> "Generic energy system definition of http://www.iec.ch/TC57/CIM#PowerTransformer"@en ;
+                                                                                                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "Transformatiefunctie"@nl ,
+                                                                                                                                                                  "Transformer"@en .
 
 
-###  https://w3id.org/EnergyInformationModel/ontology/networks/primarycomponents#7c5f4ddf_4467_4c72_b26b_4c96485bd533
-<https://w3id.org/EnergyInformationModel/ontology/networks/primarycomponents#7c5f4ddf_4467_4c72_b26b_4c96485bd533> rdf:type owl:Class ;
-                                                                                                                   rdfs:subClassOf <https://w3id.org/EnergyInformationModel/ontology/networks/primarycomponents#1f327447_2de1_412e_bb40_1e548aed4467> ;
-                                                                                                                   <http://www.w3.org/2004/02/skos/core#definition> """Primary equipment, with uniform properties with regard to energy loss, used for transporting energy over a distance. 
+###  https://w3id.org/EnergyInformationModel/ontology/network/primarycomponents#7c5f4ddf_4467_4c72_b26b_4c96485bd533
+<https://w3id.org/EnergyInformationModel/ontology/network/primarycomponents#7c5f4ddf_4467_4c72_b26b_4c96485bd533> rdf:type owl:Class ;
+                                                                                                                  rdfs:subClassOf <https://w3id.org/EnergyInformationModel/ontology/network/primarycomponents#1f327447_2de1_412e_bb40_1e548aed4467> ;
+                                                                                                                  <http://www.w3.org/2004/02/skos/core#definition> """Primary equipment, with uniform properties with regard to energy loss, used for transporting energy over a distance. 
 
 Examples include cable segments in electricity- or pipesegments in gas infrastructure"""@en ;
-                                                                                                                   <http://www.w3.org/2004/02/skos/core#editorialNote> "Generic energy system definition of http://www.iec.ch/TC57/CIM#Conductor"@en ;
-                                                                                                                   <http://www.w3.org/2004/02/skos/core#prefLabel> "Transporter"@en ,
-                                                                                                                                                                   "Transportfunctie"@nl .
+                                                                                                                  <http://www.w3.org/2004/02/skos/core#editorialNote> "Generic energy system definition of http://www.iec.ch/TC57/CIM#Conductor"@en ;
+                                                                                                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "Transporter"@en ,
+                                                                                                                                                                  "Transportfunctie"@nl .
 
 
-###  https://w3id.org/EnergyInformationModel/ontology/networks/primarycomponents#75a82637_c3d3_44b6_af30_37f3a56a4dfb
-<https://w3id.org/EnergyInformationModel/ontology/networks/primarycomponents#75a82637_c3d3_44b6_af30_37f3a56a4dfb> rdf:type owl:Class ;
-                                                                                                                   rdfs:subClassOf <https://w3id.org/EnergyInformationModel/ontology/networks/primarycomponents#1f327447_2de1_412e_bb40_1e548aed4467> ;
-                                                                                                                   <http://www.w3.org/2004/02/skos/core#definition> "Generic device for unterrupting energy flow through a system. Examples include Swtiches annd Valves"@en ;
-                                                                                                                   <http://www.w3.org/2004/02/skos/core#editorialNote> "Generic energy system definition of http://www.iec.ch/TC57/CIM#Switch"@en ;
-                                                                                                                   <http://www.w3.org/2004/02/skos/core#prefLabel> "Disconnector"@en ,
-                                                                                                                                                                   "Onderbrekerfunctie"@nl .
+###  https://w3id.org/EnergyInformationModel/ontology/network/primarycomponents#75a82637_c3d3_44b6_af30_37f3a56a4dfb
+<https://w3id.org/EnergyInformationModel/ontology/network/primarycomponents#75a82637_c3d3_44b6_af30_37f3a56a4dfb> rdf:type owl:Class ;
+                                                                                                                  rdfs:subClassOf <https://w3id.org/EnergyInformationModel/ontology/network/primarycomponents#1f327447_2de1_412e_bb40_1e548aed4467> ;
+                                                                                                                  <http://www.w3.org/2004/02/skos/core#definition> "Generic device for unterrupting energy flow through a system. Examples include Swtiches annd Valves"@en ;
+                                                                                                                  <http://www.w3.org/2004/02/skos/core#editorialNote> "Generic energy system definition of http://www.iec.ch/TC57/CIM#Switch"@en ;
+                                                                                                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "Disconnector"@en ,
+                                                                                                                                                                  "Onderbrekerfunctie"@nl .
 
 
-###  https://w3id.org/EnergyInformationModel/ontology/networks/primarycomponents#84c50d0d_8ee4_41b2_b793_667e7e62c53f
-<https://w3id.org/EnergyInformationModel/ontology/networks/primarycomponents#84c50d0d_8ee4_41b2_b793_667e7e62c53f> rdf:type owl:Class ;
-                                                                                                                   rdfs:subClassOf <https://w3id.org/EnergyInformationModel/ontology/networks/primarycomponents#1f327447_2de1_412e_bb40_1e548aed4467> ;
-                                                                                                                   <http://www.w3.org/2004/02/skos/core#definition> "A point in the system where energy can be let out for the purpose of dagely working on the system. Examples include Ground and Vent."@en ;
-                                                                                                                   <http://www.w3.org/2004/02/skos/core#editorialNote> "Generic energy system definition of http://www.iec.ch/TC57/CIM#Ground"@en ;
-                                                                                                                   <http://www.w3.org/2004/02/skos/core#prefLabel> "DeEnergizer"@en ,
-                                                                                                                                                                   "Energielozingfunctie"@nl .
+###  https://w3id.org/EnergyInformationModel/ontology/network/primarycomponents#84c50d0d_8ee4_41b2_b793_667e7e62c53f
+<https://w3id.org/EnergyInformationModel/ontology/network/primarycomponents#84c50d0d_8ee4_41b2_b793_667e7e62c53f> rdf:type owl:Class ;
+                                                                                                                  rdfs:subClassOf <https://w3id.org/EnergyInformationModel/ontology/network/primarycomponents#1f327447_2de1_412e_bb40_1e548aed4467> ;
+                                                                                                                  <http://www.w3.org/2004/02/skos/core#definition> "A point in the system where energy can be let out for the purpose of dagely working on the system. Examples include Ground and Vent."@en ;
+                                                                                                                  <http://www.w3.org/2004/02/skos/core#editorialNote> "Generic energy system definition of http://www.iec.ch/TC57/CIM#Ground"@en ;
+                                                                                                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "DeEnergizer"@en ,
+                                                                                                                                                                  "Energielozingfunctie"@nl .
 
 
 ###  https://w3id.org/energyinformationmodel/ontology/core#a8bec9fa_deb6_4fe9_8726_0b8b6208fa73

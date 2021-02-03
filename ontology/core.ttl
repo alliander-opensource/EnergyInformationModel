@@ -56,6 +56,13 @@
                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "ContainsEquipment"@en .
 
 
+###  https://w3id.org/EnergyInformationModel/ontology/core#ef0d90d6_9c6e_4755_b471_091929a1707f
+:ef0d90d6_9c6e_4755_b471_091929a1707f rdf:type owl:ObjectProperty ;
+                                      rdfs:domain <https://w3id.org/energyinformationmodel/ontology/core#c277f37c_c697_4522_9558_16d98edb8ab1> ;
+                                      rdfs:range :c1105b1a_0b23_4e62_8ef0_7db16771cc72 ;
+                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "BelongsToDomain"@en .
+
+
 ###  https://w3id.org/EnergyInformationModel/ontology/core#1dcddd6a_e404_455a_b672_a61c6d44f16e
 <https://w3id.org/EnergyInformationModel/ontology/core#1dcddd6a_e404_455a_b672_a61c6d44f16e> rdf:type owl:ObjectProperty ;
                                                                                              rdfs:subPropertyOf <https://w3id.org/EnergyInformationModel/ontology/core#383fc6ce_402d_4c81_a4e8_dea9613d7a3e> ;
@@ -188,7 +195,9 @@ An Asset typically comes into exsistence during a production process (whether at
 ###  https://w3id.org/EnergyInformationModel/ontology/core#defcdc40_e2ec_4174_b9c8_a60992fdb317
 :defcdc40_e2ec_4174_b9c8_a60992fdb317 rdf:type owl:Class ;
                                       rdfs:subClassOf <http://www.iec.ch/TC57/CIM#IdentifiedObject> ;
-                                      <http://www.w3.org/2004/02/skos/core#definition> "Defines the Operational Envelope at which a part of the grid is operated. In electricity (AC) this is typically expressed with a Voltage Level and a frequency, In Gas this typoically involves Caloric Value and Pressure level."@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> """Defines the Operational Envelope at which a part of the grid is operated. In electricity (AC) this is typically expressed with a Voltage Level and a frequency, In Gas this typoically involves Caloric Value and Pressure level.
+
+Primary Equipment operated at different Operational Envelopes cannot be directly connected without some kind of transformer."""@en ;
                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "OperationalEnvelope"@en .
 
 
@@ -256,6 +265,31 @@ An Asset typically comes into exsistence during a production process (whether at
 An EnergySystemResource typically comes into existence during a planning/designing process and seizes to exist when either the design isn't implemented or when the part of the energy grid it models is permanently taken out of service."""@en ;
                                                                                              <http://www.w3.org/2004/02/skos/core#editorialNote> "Generic energy system definition of  http://www.iec.ch/TC57/CIM#PowerSystemResource"@en ;
                                                                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "EnergySystemResource"@en .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/EnergyInformationModel/ontology/core#b396537b_b2f5_4087_9d33_c24cb7cd4895
+:b396537b_b2f5_4087_9d33_c24cb7cd4895 rdf:type owl:NamedIndividual ,
+                                               :c1105b1a_0b23_4e62_8ef0_7db16771cc72 ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "Describes the concept of the electricity domain within the energy system."@en ;
+                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "Electricity"@en .
+
+
+###  https://w3id.org/EnergyInformationModel/ontology/core#3aa6b973_916f_49fa_a7bd_ff0d8c160b08
+<https://w3id.org/EnergyInformationModel/ontology/core#3aa6b973_916f_49fa_a7bd_ff0d8c160b08> rdf:type owl:NamedIndividual ,
+                                                                                                      :c1105b1a_0b23_4e62_8ef0_7db16771cc72 ;
+                                                                                             <http://www.w3.org/2004/02/skos/core#definition> "Describes the concept of the hydrogen domain within the energy system."@en ;
+                                                                                             <http://www.w3.org/2004/02/skos/core#prefLabel> "Hydrogen"@en .
+
+
+###  https://w3id.org/EnergyInformationModel/ontology/core#7d732dbb_4f3a_44ad_90e5_dd1852561deb
+<https://w3id.org/EnergyInformationModel/ontology/core#7d732dbb_4f3a_44ad_90e5_dd1852561deb> rdf:type owl:NamedIndividual ,
+                                                                                                      :c1105b1a_0b23_4e62_8ef0_7db16771cc72 ;
+                                                                                             <http://www.w3.org/2004/02/skos/core#definition> "Describes the concept of the Natural Gas (CH4) domain within the energy system."@en ;
+                                                                                             <http://www.w3.org/2004/02/skos/core#prefLabel> "NaturalGas"@en .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="https://w3id.org/EnergyInformationModel/ontology/network/primarycomponents#" uri="primarycomponents.ttl"/>
     <uri id="Imports Wizard Entry" name="https://w3id.org/EnergyInformationModel/ontology/core#" uri="file:/C:/Data/git/EnergyInformationModel/ontology/core.ttl"/>
     <uri id="User Entered Import Resolution" name="https://w3id.org/EnergyInformationModel/ontology/networks/primarycomponents#" uri="primarycomponents.ttl"/>
     <uri id="Imports Wizard Entry" name="https://w3id.org/EnergyInformationModel/ontology/core#" uri="file:/C:/Data/git/EnergyInformationModel/ontology/core.ttl"/>
