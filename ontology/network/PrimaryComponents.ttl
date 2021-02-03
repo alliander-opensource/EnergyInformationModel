@@ -1,0 +1,94 @@
+@prefix : <https://w3id.org/EnergyInformationModel/ontology/networks/primarycomponents#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix eimc: <https://w3id.org/energyinformationmodel/ontology/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix eimpc: <https://w3id.org/EnergyInformationModel/ontology/networks/primarycomponents#> .
+@base <https://w3id.org/EnergyInformationModel/ontology/networks/primarycomponents#> .
+
+<https://w3id.org/EnergyInformationModel/ontology/networks/primarycomponents#> rdf:type owl:Ontology ;
+                                                                                rdfs:comment "The Primary Component ontology in the Energy Information model defines the components of an energy system that carry the energy for the purpose of transport and distribution."@en ;
+                                                                                rdfs:seeAlso <http://www.iec.ch/TC57/CIM#> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/conformsTo
+<http://purl.org/dc/terms/conformsTo> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#editorialNote
+<http://www.w3.org/2004/02/skos/core#editorialNote> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+<http://www.w3.org/2004/02/skos/core#prefLabel> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://w3id.org/EnergyInformationModel/ontology/networks/primarycomponents#f4574df8_5829_485f_8481_0f5a15a85eac
+eimpc:f4574df8_5829_485f_8481_0f5a15a85eac rdf:type owl:Class ;
+                                           rdfs:subClassOf <https://w3id.org/EnergyInformationModel/ontology/networks/primarycomponents#1f327447_2de1_412e_bb40_1e548aed4467> ;
+                                           <http://www.w3.org/2004/02/skos/core#definition> "A primary equipment or group of primary equipment with negligible energy loss that serve to connect other primary equipmen and are modelled with a single logical terminal."@en ;
+                                           <http://www.w3.org/2004/02/skos/core#editorialNote> "Generic energy system definition for http://www.iec.ch/TC57/CIM#Connector"@en ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "Connector"@en .
+
+
+###  https://w3id.org/EnergyInformationModel/ontology/networks/primarycomponents#1f327447_2de1_412e_bb40_1e548aed4467
+<https://w3id.org/EnergyInformationModel/ontology/networks/primarycomponents#1f327447_2de1_412e_bb40_1e548aed4467> rdf:type owl:Class ;
+                                                                                                                   rdfs:subClassOf <https://w3id.org/energyinformationmodel/ontology/core#2cd0f6fc_b577_427f_95bd_8dd439350c82> ;
+                                                                                                                   <http://www.w3.org/2004/02/skos/core#editorialNote> "Generic energy system definition of http://www.iec.ch/TC57/CIM#ConductingEquipment"@en ;
+                                                                                                                   <http://www.w3.org/2004/02/skos/core#prefLabel> "PrimaryEquipment"@en .
+
+
+###  https://w3id.org/EnergyInformationModel/ontology/networks/primarycomponents#6b198bd1_3cd5_449b_9447_23f7fa839b52
+<https://w3id.org/EnergyInformationModel/ontology/networks/primarycomponents#6b198bd1_3cd5_449b_9447_23f7fa839b52> rdf:type owl:Class ;
+                                                                                                                   rdfs:subClassOf <https://w3id.org/EnergyInformationModel/ontology/networks/primarycomponents#1f327447_2de1_412e_bb40_1e548aed4467> ;
+                                                                                                                   <http://www.w3.org/2004/02/skos/core#prefLabel> "Transformer"@en .
+
+
+###  https://w3id.org/EnergyInformationModel/ontology/networks/primarycomponents#7c5f4ddf_4467_4c72_b26b_4c96485bd533
+<https://w3id.org/EnergyInformationModel/ontology/networks/primarycomponents#7c5f4ddf_4467_4c72_b26b_4c96485bd533> rdf:type owl:Class ;
+                                                                                                                   rdfs:subClassOf <https://w3id.org/EnergyInformationModel/ontology/networks/primarycomponents#1f327447_2de1_412e_bb40_1e548aed4467> ;
+                                                                                                                   <http://www.w3.org/2004/02/skos/core#definition> """Primary equipment, with uniform properties with regard to energy loss, used for transporting energy over a distance. 
+
+Examples include cable segments in electricity- or pipesegments in gas infrastructure"""@en ;
+                                                                                                                   <http://www.w3.org/2004/02/skos/core#editorialNote> "Generic energy system definition of http://www.iec.ch/TC57/CIM#Conductor"@en ;
+                                                                                                                   <http://www.w3.org/2004/02/skos/core#prefLabel> "Transporter"@en .
+
+
+###  https://w3id.org/EnergyInformationModel/ontology/networks/primarycomponents#75a82637_c3d3_44b6_af30_37f3a56a4dfb
+<https://w3id.org/EnergyInformationModel/ontology/networks/primarycomponents#75a82637_c3d3_44b6_af30_37f3a56a4dfb> rdf:type owl:Class ;
+                                                                                                                   rdfs:subClassOf <https://w3id.org/EnergyInformationModel/ontology/networks/primarycomponents#1f327447_2de1_412e_bb40_1e548aed4467> ;
+                                                                                                                   <http://www.w3.org/2004/02/skos/core#prefLabel> "Disconnector"@en .
+
+
+###  https://w3id.org/EnergyInformationModel/ontology/networks/primarycomponents#84c50d0d_8ee4_41b2_b793_667e7e62c53f
+<https://w3id.org/EnergyInformationModel/ontology/networks/primarycomponents#84c50d0d_8ee4_41b2_b793_667e7e62c53f> rdf:type owl:Class ;
+                                                                                                                   rdfs:subClassOf <https://w3id.org/EnergyInformationModel/ontology/networks/primarycomponents#1f327447_2de1_412e_bb40_1e548aed4467> ;
+                                                                                                                   <http://www.w3.org/2004/02/skos/core#prefLabel> "DeEnergizer"@en .
+
+
+###  https://w3id.org/energyinformationmodel/ontology/core#c277f37c_c697_4522_9558_16d98edb8ab1
+eimc:c277f37c_c697_4522_9558_16d98edb8ab1 rdf:type owl:Class ;
+                                          rdfs:isDefinedBy <https://w3id.org/EnergyInformationModel/ontology/core#> ;
+                                          <http://www.w3.org/2004/02/skos/core#prefLabel> "EnergySystemResource"@en .
+
+
+###  https://w3id.org/energyinformationmodel/ontology/core#2cd0f6fc_b577_427f_95bd_8dd439350c82
+<https://w3id.org/energyinformationmodel/ontology/core#2cd0f6fc_b577_427f_95bd_8dd439350c82> rdf:type owl:Class ;
+                                                                                             rdfs:subClassOf eimc:c277f37c_c697_4522_9558_16d98edb8ab1 ;
+                                                                                             <http://www.w3.org/2004/02/skos/core#prefLabel> "Equipment"@en .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
