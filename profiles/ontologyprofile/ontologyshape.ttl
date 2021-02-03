@@ -29,7 +29,7 @@
     sh:property [
         rdfs:comment "At least one range is defined to ensure correct transformation to OO artifacts"@en;
         sh:path rdfs:range ;
-        sh:node :ClassShape ;
+#        sh:node :ClassShape ;
         sh:minCount 1 ;
     ] .
 
@@ -68,6 +68,6 @@
     a sh:PropertyShape ;
     rdfs:comment "At least one domain is defined to ensure correct transformation to OO artifacts"@en;
     sh:path rdfs:domain ;
-    sh:node :ClassShape ;
+#    sh:node :ClassShape ;
     sh:minCount 1 .
 

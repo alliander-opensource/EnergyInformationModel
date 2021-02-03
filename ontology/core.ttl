@@ -8,12 +8,18 @@
 @base <https://w3id.org/EnergyInformationModel/ontology/core#> .
 
 <https://w3id.org/EnergyInformationModel/ontology/core#> rdf:type owl:Ontology ;
+                                                          <http://purl.org/dc/terms/conformsTo> <https://w3id.org/EnergyInformationModel/profiles/ontologyprofile/ontologyshape#> ;
                                                           rdfs:comment "Core concept ontology for the Energy Information Model" ;
                                                           rdfs:seeAlso <http://www.iec.ch/TC57/CIM#> .
 
 #################################################################
 #    Annotation properties
 #################################################################
+
+###  http://purl.org/dc/terms/conformsTo
+<http://purl.org/dc/terms/conformsTo> rdf:type owl:AnnotationProperty ;
+                                      rdfs:subPropertyOf rdfs:comment .
+
 
 ###  http://www.w3.org/2004/02/skos/core#definition
 <http://www.w3.org/2004/02/skos/core#definition> rdf:type owl:AnnotationProperty .
@@ -147,13 +153,18 @@
 <http://www.iec.ch/TC57/CIM#Asset> rdf:type owl:Class ;
                                    rdfs:subClassOf <http://www.iec.ch/TC57/CIM#IdentifiedObject> ;
                                    owl:disjointWith <https://w3id.org/energyinformationmodel/ontology/core#c277f37c_c697_4522_9558_16d98edb8ab1> ;
-                                   rdfs:isDefinedBy <http://www.iec.ch/TC57/CIM#> .
+                                   rdfs:isDefinedBy <http://www.iec.ch/TC57/CIM#> ;
+                                   <http://www.w3.org/2004/02/skos/core#definition> """Tangible resource of the utility including energy system equipment various end devices cabinets buildings etc. For energy network equipment the role of the asset is defined through EnergySystemResource and its subclasses. Asset description places emphasis on the physical characteristics of the equipment fulfilling that role.
+
+An Asset typically comes into exsistence during a production process (whether at a production site or in the field) and seizes to exist when it is permanently disassembled, landfilled or recycled. When an asset is reused, it retains it identity."""@en ;
+                                   <http://www.w3.org/2004/02/skos/core#prefLabel> "Asset"@en .
 
 
 ###  http://www.iec.ch/TC57/CIM#IdentifiedObject
 <http://www.iec.ch/TC57/CIM#IdentifiedObject> rdf:type owl:Class ;
                                               rdfs:isDefinedBy <http://www.iec.ch/TC57/CIM#> ;
                                               rdfs:label "Geïdentificeerd Object"@nl ;
+                                              <http://www.w3.org/2004/02/skos/core#definition> "This is a root class to provide common identification for all classes needing identification and naming attributes."@en ;
                                               <http://www.w3.org/2004/02/skos/core#prefLabel> "IdentifiedObject"@en .
 
 
@@ -210,7 +221,9 @@
                                                                                              rdfs:subClassOf <http://www.iec.ch/TC57/CIM#IdentifiedObject> ;
                                                                                              rdfs:label "EnergieSysteemFunctie"@nl ;
                                                                                              rdfs:seeAlso <http://www.iec.ch/TC57/CIM#PowerSystemResource> ;
-                                                                                             <http://www.w3.org/2004/02/skos/core#definition> "The Energy System Resource defines the functional elements of the energy system. The fysical stuff with which these functions are implemented are modelled by http://www.iec.ch/TC57/CIM#Asset."@en ;
+                                                                                             <http://www.w3.org/2004/02/skos/core#definition> """The Energy System Resource defines the functional elements of the energy system. The fysical stuff with which these functions are implemented are modelled by http://www.iec.ch/TC57/CIM#Asset.
+
+An EnergySystemResource typically comes into existence during a planning/designing process and seizes to exist when either the design isn't implemented or when the part of the energy grid it models is permanently taken out of service."""@en ;
                                                                                              <http://www.w3.org/2004/02/skos/core#editorialNote> "Generic energy system definition of  http://www.iec.ch/TC57/CIM#PowerSystemResource"@en ;
                                                                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "EnergySystemResource"@en .
 
