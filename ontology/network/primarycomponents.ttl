@@ -5,14 +5,14 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix eimc: <https://w3id.org/energyinformationmodel/ontology/core#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <https://w3id.org/EnergyInformationModel/ontology/networks/primarycomponents#> .
+@base <https://w3id.org/EnergyInformationModel/ontology/network/primarycomponents#> .
 
-<https://w3id.org/EnergyInformationModel/ontology/networks/primarycomponents#> rdf:type owl:Ontology ;
-                                                                                owl:imports <https://w3id.org/EnergyInformationModel/ontology/core#> ;
-                                                                                <http://purl.org/dc/terms/conformsTo> <https://w3id.org/EnergyInformationModel/profiles/ontologyprofile/ontologyshape#> ;
-                                                                                <http://purl.org/dc/terms/requires> <https://w3id.org/EnergyInformationModel/ontology/core#> ;
-                                                                                rdfs:comment "The Primary Component ontology in the Energy Information model defines the components of an energy system that carry the energy for the purpose of transport and distribution."@en ;
-                                                                                rdfs:seeAlso <http://www.iec.ch/TC57/CIM#> .
+<https://w3id.org/EnergyInformationModel/ontology/network/primarycomponents#> rdf:type owl:Ontology ;
+                                                                               owl:imports <https://w3id.org/EnergyInformationModel/ontology/core#> ;
+                                                                               <http://purl.org/dc/terms/conformsTo> <https://w3id.org/EnergyInformationModel/profiles/ontologyprofile/ontologyshape#> ;
+                                                                               <http://purl.org/dc/terms/requires> <https://w3id.org/EnergyInformationModel/ontology/core#> ;
+                                                                               rdfs:comment "The Primary Component ontology in the Energy Information model defines the components of an energy system that carry the energy for the purpose of transport and distribution."@en ;
+                                                                               rdfs:seeAlso <http://www.iec.ch/TC57/CIM#> .
 
 #################################################################
 #    Annotation properties

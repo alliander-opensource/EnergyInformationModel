@@ -4,18 +4,19 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <https://w3id.org/EnergyInformationModel/ontology/networks/topology#> .
+@base <https://w3id.org/EnergyInformationModel/ontology/network/topology#> .
 
-<https://w3id.org/EnergyInformationModel/ontology/networks/topology#> rdf:type owl:Ontology ;
-                                                                       owl:imports <https://w3id.org/EnergyInformationModel/ontology/core#> ,
-                                                                                   <https://w3id.org/EnergyInformationModel/ontology/networks/primarycomponents#> .
+<https://w3id.org/EnergyInformationModel/ontology/network/topology#> rdf:type owl:Ontology ;
+                                                                      owl:imports <https://w3id.org/EnergyInformationModel/ontology/core#> ,
+                                                                                  <https://w3id.org/EnergyInformationModel/ontology/networks/primarycomponents#> .
 
 #################################################################
 #    Object Properties
 #################################################################
 
 ###  https://w3id.org/EnergyInformationModel/ontology/networks/primarycomponents#fbaaff7e_67eb_45b7_882a_1f3d166ab849
-<https://w3id.org/EnergyInformationModel/ontology/networks/primarycomponents#fbaaff7e_67eb_45b7_882a_1f3d166ab849> rdfs:domain <https://w3id.org/EnergyInformationModel/ontology/networks/topology#32b2b3c9_b000_4803_9a7c_e35e7f78b004> .
+<https://w3id.org/EnergyInformationModel/ontology/networks/primarycomponents#fbaaff7e_67eb_45b7_882a_1f3d166ab849> rdf:type owl:ObjectProperty ;
+                                                                                                                   rdfs:domain <https://w3id.org/EnergyInformationModel/ontology/networks/topology#32b2b3c9_b000_4803_9a7c_e35e7f78b004> .
 
 
 ###  https://w3id.org/EnergyInformationModel/ontology/networks/topology#af06bcce_915d_4e8a_a98a_754fdc88f2a4
