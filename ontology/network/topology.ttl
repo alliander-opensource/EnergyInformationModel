@@ -1,0 +1,67 @@
+@prefix : <https://w3id.org/EnergyInformationModel/ontology/networks/topology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/EnergyInformationModel/ontology/networks/topology#> .
+
+<https://w3id.org/EnergyInformationModel/ontology/networks/topology#> rdf:type owl:Ontology ;
+                                                                       owl:imports <https://w3id.org/EnergyInformationModel/ontology/core#> ,
+                                                                                   <https://w3id.org/EnergyInformationModel/ontology/networks/primarycomponents#> .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/EnergyInformationModel/ontology/networks/primarycomponents#fbaaff7e_67eb_45b7_882a_1f3d166ab849
+<https://w3id.org/EnergyInformationModel/ontology/networks/primarycomponents#fbaaff7e_67eb_45b7_882a_1f3d166ab849> rdfs:domain <https://w3id.org/EnergyInformationModel/ontology/networks/topology#32b2b3c9_b000_4803_9a7c_e35e7f78b004> .
+
+
+###  https://w3id.org/EnergyInformationModel/ontology/networks/topology#af06bcce_915d_4e8a_a98a_754fdc88f2a4
+:af06bcce_915d_4e8a_a98a_754fdc88f2a4 rdf:type owl:ObjectProperty ;
+                                      owl:inverseOf :f3b1c122_600e_4906_87d5_986a820e6b55 ;
+                                      rdfs:domain <https://w3id.org/EnergyInformationModel/ontology/networks/topology#32b2b3c9_b000_4803_9a7c_e35e7f78b004> ;
+                                      rdfs:range <https://w3id.org/energyinformationmodel/ontology/core#a8bec9fa_deb6_4fe9_8726_0b8b6208fa73> ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "Relates A topological node to the Terminals at its outer edges. These Terminals typically belong to Disconnectors or Transformers."@en ;
+                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "HasBoundaryTerminals"@en .
+
+
+###  https://w3id.org/EnergyInformationModel/ontology/networks/topology#f3b1c122_600e_4906_87d5_986a820e6b55
+:f3b1c122_600e_4906_87d5_986a820e6b55 rdf:type owl:ObjectProperty ;
+                                      rdfs:domain <https://w3id.org/energyinformationmodel/ontology/core#a8bec9fa_deb6_4fe9_8726_0b8b6208fa73> ;
+                                      rdfs:range <https://w3id.org/EnergyInformationModel/ontology/networks/topology#32b2b3c9_b000_4803_9a7c_e35e7f78b004> ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "If a terminal is at the boundary of a Topological Node, thhis relation relates it to that TopologicalNode."@en ;
+                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "AtEdgeOfTopologicalNode"@en .
+
+
+###  https://w3id.org/EnergyInformationModel/ontology/networks/topology#689d45a5_bd34_433c_bcdb_d30a46a1f0d9
+<https://w3id.org/EnergyInformationModel/ontology/networks/topology#689d45a5_bd34_433c_bcdb_d30a46a1f0d9> rdf:type owl:ObjectProperty ;
+                                                                                                          rdfs:subPropertyOf <https://w3id.org/EnergyInformationModel/ontology/core#383fc6ce_402d_4c81_a4e8_dea9613d7a3e> ;
+                                                                                                          rdfs:domain <https://w3id.org/energyinformationmodel/ontology/core#b54a2641_b1fa_46d4_8bd5_24161660e542> ;
+                                                                                                          rdfs:range <https://w3id.org/EnergyInformationModel/ontology/networks/topology#32b2b3c9_b000_4803_9a7c_e35e7f78b004> ;
+                                                                                                          <http://www.w3.org/2004/02/skos/core#prefLabel> "PartOfTopologicalNode"@en .
+
+
+###  https://w3id.org/EnergyInformationModel/ontology/networks/topology#9302e78a_c343_4688_9ece_944b2c5a4f33
+<https://w3id.org/EnergyInformationModel/ontology/networks/topology#9302e78a_c343_4688_9ece_944b2c5a4f33> rdf:type owl:ObjectProperty ;
+                                                                                                          rdfs:subPropertyOf <https://w3id.org/EnergyInformationModel/ontology/core#95194981_485f_4850_b1b3_d6e684529a99> ;
+                                                                                                          rdfs:domain <https://w3id.org/EnergyInformationModel/ontology/networks/topology#32b2b3c9_b000_4803_9a7c_e35e7f78b004> ;
+                                                                                                          rdfs:range <https://w3id.org/energyinformationmodel/ontology/core#b54a2641_b1fa_46d4_8bd5_24161660e542> ;
+                                                                                                          <http://www.w3.org/2004/02/skos/core#definition> "Relates a TopologicalNode to the Connectivity Nodes it contains."@en ;
+                                                                                                          <http://www.w3.org/2004/02/skos/core#prefLabel> "ContainsConnectivityNodes"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://w3id.org/EnergyInformationModel/ontology/networks/topology#32b2b3c9_b000_4803_9a7c_e35e7f78b004
+<https://w3id.org/EnergyInformationModel/ontology/networks/topology#32b2b3c9_b000_4803_9a7c_e35e7f78b004> rdf:type owl:Class ;
+                                                                                                          rdfs:subClassOf <http://www.iec.ch/TC57/CIM#IdentifiedObject> ;
+                                                                                                          <http://www.w3.org/2004/02/skos/core#definition> "A topological node is a set of connectivity nodes that, in the current network state, are connected together through any type of permeable Disconnectors. Topological nodes change as the current network state changes (i.e., switches, valves, etc. change state). Topological Nodes end at Disconenctors or Transformers."@en ;
+                                                                                                          <http://www.w3.org/2004/02/skos/core#editorialNote> "Generic energy system definition of http://www.iec.ch/TC57/CIM#TopologicalNode."@en ;
+                                                                                                          <http://www.w3.org/2004/02/skos/core#prefLabel> "TopologicalNode"@en .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

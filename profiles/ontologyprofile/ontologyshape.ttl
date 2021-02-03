@@ -14,6 +14,16 @@
 ################################################################
 ####  sh:NodeShapes
 ###############################################################
+:ontologyshape
+    a sh:NodeShape ;
+    sh:targetClass owl:Ontology ;
+    sh:property [
+        rdfs:comment "we dont want ontology imports in the published version"@en ;
+        sh:path owl:imports ;
+        sh:maxCount 0 ;
+    ].
+
+
 :ClassShape
     a sh:NodeShape ;
     sh:targetClass owl:Class ;

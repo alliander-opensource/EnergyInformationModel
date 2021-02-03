@@ -17,8 +17,7 @@
 #################################################################
 
 ###  http://purl.org/dc/terms/conformsTo
-<http://purl.org/dc/terms/conformsTo> rdf:type owl:AnnotationProperty ;
-                                      rdfs:subPropertyOf rdfs:comment .
+<http://purl.org/dc/terms/conformsTo> rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.w3.org/2004/02/skos/core#definition
@@ -26,13 +25,11 @@
 
 
 ###  http://www.w3.org/2004/02/skos/core#editorialNote
-<http://www.w3.org/2004/02/skos/core#editorialNote> rdf:type owl:AnnotationProperty ;
-                                                    rdfs:subPropertyOf rdfs:seeAlso .
+<http://www.w3.org/2004/02/skos/core#editorialNote> rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.w3.org/2004/02/skos/core#prefLabel
-<http://www.w3.org/2004/02/skos/core#prefLabel> rdf:type owl:AnnotationProperty ;
-                                                rdfs:subPropertyOf rdfs:label .
+<http://www.w3.org/2004/02/skos/core#prefLabel> rdf:type owl:AnnotationProperty .
 
 
 #################################################################
@@ -88,6 +85,15 @@
                                                                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "PartOfEquipmentContainer"@en .
 
 
+###  https://w3id.org/EnergyInformationModel/ontology/core#89c544c0_b500_43e6_aa90_21cb601172a7
+<https://w3id.org/EnergyInformationModel/ontology/core#89c544c0_b500_43e6_aa90_21cb601172a7> rdf:type owl:ObjectProperty ;
+                                                                                             owl:inverseOf <https://w3id.org/EnergyInformationModel/ontology/networks/primarycomponents#429f58a7_9065_4c0e_a2a3_009761f78b7e> ;
+                                                                                             rdfs:domain <https://w3id.org/energyinformationmodel/ontology/core#a8bec9fa_deb6_4fe9_8726_0b8b6208fa73> ;
+                                                                                             rdfs:range <https://w3id.org/EnergyInformationModel/ontology/networks/primarycomponents#1f327447_2de1_412e_bb40_1e548aed4467> ;
+                                                                                             <http://www.w3.org/2004/02/skos/core#definition> "Relates the terminal to the Primary Equipment it belongs to."@en ;
+                                                                                             <http://www.w3.org/2004/02/skos/core#prefLabel> "BelongsToPrimaryEquipment"@en .
+
+
 ###  https://w3id.org/EnergyInformationModel/ontology/core#95194981_485f_4850_b1b3_d6e684529a99
 <https://w3id.org/EnergyInformationModel/ontology/core#95194981_485f_4850_b1b3_d6e684529a99> rdf:type owl:ObjectProperty ;
                                                                                              rdfs:subPropertyOf owl:topObjectProperty ;
@@ -97,6 +103,11 @@
                                                                                              rdfs:seeAlso <https://www.w3.org/2001/sw/BestPractices/OEP/SimplePartWhole/> ;
                                                                                              <http://www.w3.org/2004/02/skos/core#definition> "Relates a thing to its parts in the context of a decomposition."@en ;
                                                                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "HasPart"@en .
+
+
+###  https://w3id.org/EnergyInformationModel/ontology/networks/primarycomponents#429f58a7_9065_4c0e_a2a3_009761f78b7e
+<https://w3id.org/EnergyInformationModel/ontology/networks/primarycomponents#429f58a7_9065_4c0e_a2a3_009761f78b7e> rdf:type owl:ObjectProperty ;
+                                                                                                                   <http://www.w3.org/2004/02/skos/core#prefLabel> "HasTerminal"@en .
 
 
 ###  https://w3id.org/energyinformationmodel/ontology/core#c88cde8a_ebcc_483f_9e64_e76f095d7e0e
@@ -122,7 +133,7 @@
                                                                                              rdfs:domain <https://w3id.org/energyinformationmodel/ontology/core#b54a2641_b1fa_46d4_8bd5_24161660e542> ;
                                                                                              rdfs:range <https://w3id.org/energyinformationmodel/ontology/core#a8bec9fa_deb6_4fe9_8726_0b8b6208fa73> ;
                                                                                              <http://www.w3.org/2004/02/skos/core#definition> "The relationship that defines the terminals that are connected through this connectivity node"@en ;
-                                                                                             <http://www.w3.org/2004/02/skos/core#prefLabel> "ConnectsTerminals"@nl .
+                                                                                             <http://www.w3.org/2004/02/skos/core#prefLabel> "ConnectsTerminals"@en .
 
 
 ###  https://w3id.org/energyinformationmodel/ontology/core#989c262b_4f54_4b2d_b9eb_5c92bf81ec7a
@@ -168,6 +179,19 @@ An Asset typically comes into exsistence during a production process (whether at
                                               <http://www.w3.org/2004/02/skos/core#prefLabel> "IdentifiedObject"@en .
 
 
+###  https://w3id.org/EnergyInformationModel/ontology/core#c1105b1a_0b23_4e62_8ef0_7db16771cc72
+:c1105b1a_0b23_4e62_8ef0_7db16771cc72 rdf:type owl:Class ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "Defines the domain to which the energy system belongs. Examples include, Electricity, Natural Gas and Hydrogen" ;
+                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "EnergyDomain"@en .
+
+
+###  https://w3id.org/EnergyInformationModel/ontology/core#defcdc40_e2ec_4174_b9c8_a60992fdb317
+:defcdc40_e2ec_4174_b9c8_a60992fdb317 rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://www.iec.ch/TC57/CIM#IdentifiedObject> ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "Defines the Operational Envelope at which a part of the grid is operated. In electricity (AC) this is typically expressed with a Voltage Level and a frequency, In Gas this typoically involves Caloric Value and Pressure level."@en ;
+                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "OperationalEnvelope"@en .
+
+
 ###  https://w3id.org/EnergyInformationModel/ontology/core#2cd0f6fc_b577_427f_95bd_8dd439350c82
 <https://w3id.org/EnergyInformationModel/ontology/core#2cd0f6fc_b577_427f_95bd_8dd439350c82> rdf:type owl:Class ;
                                                                                              rdfs:subClassOf <https://w3id.org/energyinformationmodel/ontology/core#c277f37c_c697_4522_9558_16d98edb8ab1> ;
@@ -197,6 +221,12 @@ An Asset typically comes into exsistence during a production process (whether at
                                                                                              <http://www.w3.org/2004/02/skos/core#definition> "A collection of equipment for purposes other than generation or utilization through which energy in bulk is passed for the purposes of switching or modifying its characteristics."@en ;
                                                                                              <http://www.w3.org/2004/02/skos/core#editorialNote> "Generic energy system definition for http://www.iec.ch/TC57/CIM#Substation"@en ;
                                                                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "Substation"@en .
+
+
+###  https://w3id.org/EnergyInformationModel/ontology/networks/primarycomponents#1f327447_2de1_412e_bb40_1e548aed4467
+<https://w3id.org/EnergyInformationModel/ontology/networks/primarycomponents#1f327447_2de1_412e_bb40_1e548aed4467> rdf:type owl:Class ;
+                                                                                                                   rdfs:subClassOf <https://w3id.org/EnergyInformationModel/ontology/core#2cd0f6fc_b577_427f_95bd_8dd439350c82> ;
+                                                                                                                   <http://www.w3.org/2004/02/skos/core#prefLabel> <https://w3id.org/EnergyInformationModel/ontology/PrimaryEquipment> .
 
 
 ###  https://w3id.org/energyinformationmodel/ontology/core#a8bec9fa_deb6_4fe9_8726_0b8b6208fa73
