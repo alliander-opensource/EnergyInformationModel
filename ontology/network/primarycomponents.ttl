@@ -10,6 +10,7 @@
 <https://w3id.org/EnergyInformationModel/ontology/network/primarycomponents#> rdf:type owl:Ontology ;
                                                                                owl:imports <https://w3id.org/EnergyInformationModel/ontology/core#> ;
                                                                                <http://purl.org/dc/terms/conformsTo> <https://w3id.org/EnergyInformationModel/profiles/ontologyprofile/ontologyshape#> ;
+                                                                               <http://purl.org/dc/terms/license> <https://www.apache.org/licenses/LICENSE-2.0> ;
                                                                                <http://purl.org/dc/terms/requires> <https://w3id.org/EnergyInformationModel/ontology/core#> ;
                                                                                rdfs:comment "The Primary Component ontology in the Energy Information model defines the components of an energy system that carry the energy for the purpose of transport and distribution."@en ;
                                                                                rdfs:seeAlso <http://www.iec.ch/TC57/CIM#> .
@@ -20,6 +21,10 @@
 
 ###  http://purl.org/dc/terms/conformsTo
 <http://purl.org/dc/terms/conformsTo> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/requires
@@ -94,6 +99,21 @@
 
 
 #################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/EnergyInformationModel/ontology/network/primarycomponents#53e95c7e_a2ff_480a_9557_fa4df0d1b1be
+<https://w3id.org/EnergyInformationModel/ontology/network/primarycomponents#53e95c7e_a2ff_480a_9557_fa4df0d1b1be> rdf:type owl:DatatypeProperty ;
+                                                                                                                  rdfs:domain <https://w3id.org/EnergyInformationModel/ontology/network/primarycomponents#75a82637_c3d3_44b6_af30_37f3a56a4dfb> ;
+                                                                                                                  rdfs:range xsd:boolean ;
+                                                                                                                  <http://www.w3.org/2004/02/skos/core#definition> """. Indicates whether the Disconnector currently allows energy to flow through. Value of True means energy can pass through, value of False means energy flow is interrupted.
+
+N.B. This definition is a Simplified version of the disconnector status that may be used for evaluating scenario's.
+For master data and archival purposes, the DisconnectorStatus should be used"""@en ;
+                                                                                                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "currentlyConnecting"@en .
+
+
+#################################################################
 #    Classes
 #################################################################
 
@@ -157,7 +177,7 @@ Examples include cable segments in electricity- or pipesegments in gas infrastru
 ###  https://w3id.org/EnergyInformationModel/ontology/network/primarycomponents#75a82637_c3d3_44b6_af30_37f3a56a4dfb
 <https://w3id.org/EnergyInformationModel/ontology/network/primarycomponents#75a82637_c3d3_44b6_af30_37f3a56a4dfb> rdf:type owl:Class ;
                                                                                                                   rdfs:subClassOf <https://w3id.org/EnergyInformationModel/ontology/network/primarycomponents#1f327447_2de1_412e_bb40_1e548aed4467> ;
-                                                                                                                  <http://www.w3.org/2004/02/skos/core#definition> "Generic device for unterrupting energy flow through a system. Examples include Swtiches annd Valves"@en ;
+                                                                                                                  <http://www.w3.org/2004/02/skos/core#definition> "Generic device for interrupting energy flow through a system. Examples include Swtiches annd Valves"@en ;
                                                                                                                   <http://www.w3.org/2004/02/skos/core#editorialNote> "Generic energy system definition of http://www.iec.ch/TC57/CIM#Switch"@en ;
                                                                                                                   <http://www.w3.org/2004/02/skos/core#prefLabel> "Disconnector"@en ,
                                                                                                                                                                   "Onderbrekerfunctie"@nl .
@@ -166,7 +186,7 @@ Examples include cable segments in electricity- or pipesegments in gas infrastru
 ###  https://w3id.org/EnergyInformationModel/ontology/network/primarycomponents#84c50d0d_8ee4_41b2_b793_667e7e62c53f
 <https://w3id.org/EnergyInformationModel/ontology/network/primarycomponents#84c50d0d_8ee4_41b2_b793_667e7e62c53f> rdf:type owl:Class ;
                                                                                                                   rdfs:subClassOf <https://w3id.org/EnergyInformationModel/ontology/network/primarycomponents#1f327447_2de1_412e_bb40_1e548aed4467> ;
-                                                                                                                  <http://www.w3.org/2004/02/skos/core#definition> "A point in the system where energy can be let out for the purpose of dagely working on the system. Examples include Ground and Vent."@en ;
+                                                                                                                  <http://www.w3.org/2004/02/skos/core#definition> "A point in the system where energy can be let out for the purpose of safely working on the system. Examples include Ground and Vent."@en ;
                                                                                                                   <http://www.w3.org/2004/02/skos/core#editorialNote> "Generic energy system definition of http://www.iec.ch/TC57/CIM#Ground"@en ;
                                                                                                                   <http://www.w3.org/2004/02/skos/core#prefLabel> "DeEnergizer"@en ,
                                                                                                                                                                   "Energielozingfunctie"@nl .

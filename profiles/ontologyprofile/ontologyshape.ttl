@@ -7,6 +7,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct: <http://purl.org/dc/terms/> .
 @prefix :   <https://w3id.org/EnergyInformationModel/profiles/ontologyprofile/ontologyshape#> .
 
 
@@ -21,6 +22,11 @@
         rdfs:comment "we dont want ontology imports in the published version"@en ;
         sh:path owl:imports ;
         sh:maxCount 0 ;
+    ] ;
+    sh:property[
+        rdfs:comment "every ontology should have an explicit licence"@en ;
+        sh:path dct:license ;
+        sh:minCount 1 ;
     ].
 
 
