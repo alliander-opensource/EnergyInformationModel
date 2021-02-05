@@ -143,6 +143,20 @@ eimpc:f4574df8_5829_485f_8481_0f5a15a85eac rdf:type owl:Class ;
                                                                                                                   <http://www.w3.org/2004/02/skos/core#prefLabel> "PrimaryEquipment"@en .
 
 
+###  https://w3id.org/EnergyInformationModel/ontology/network/primarycomponents#385be6d9_0eef_4d6c_82f9_af39e756dca9
+<https://w3id.org/EnergyInformationModel/ontology/network/primarycomponents#385be6d9_0eef_4d6c_82f9_af39e756dca9> rdf:type owl:Class ;
+                                                                                                                  rdfs:subClassOf <https://w3id.org/EnergyInformationModel/ontology/network/primarycomponents#6b198bd1_3cd5_449b_9447_23f7fa839b52> ;
+                                                                                                                  <http://www.w3.org/2004/02/skos/core#definition> "An FuelCell a device that transforms Hydrogen (or sometimes other fuels) into Electricity . For the purpose of energy system analyses, it is a type of transformer, with one TransformerEnd in the Hydrogen domain, where it behaves a s a sink, and one TransformerEnd in the electricity domain where it behaves as a source."@en ;
+                                                                                                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "FuelCell"@en .
+
+
+###  https://w3id.org/EnergyInformationModel/ontology/network/primarycomponents#416cebbf_6714_4051_a7b8_171d015d2b92
+<https://w3id.org/EnergyInformationModel/ontology/network/primarycomponents#416cebbf_6714_4051_a7b8_171d015d2b92> rdf:type owl:Class ;
+                                                                                                                  rdfs:subClassOf <https://w3id.org/EnergyInformationModel/ontology/network/primarycomponents#6b198bd1_3cd5_449b_9447_23f7fa839b52> ;
+                                                                                                                  <http://www.w3.org/2004/02/skos/core#definition> "An Electrolyser is a device that transforms electricity into hydrogen. For the purpose of energy system analyses, it is a type of transformer, with one TransformerEnd in the electricity domain, where it behaves a s a sink, and one TransformerEnd in the hydrogen domain where it behaves as a source."@en ;
+                                                                                                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "Electrolyser"@en .
+
+
 ###  https://w3id.org/EnergyInformationModel/ontology/network/primarycomponents#521235f9_146a_40f6_951a_04f0b06b2aa2
 <https://w3id.org/EnergyInformationModel/ontology/network/primarycomponents#521235f9_146a_40f6_951a_04f0b06b2aa2> rdf:type owl:Class ;
                                                                                                                   rdfs:subClassOf <http://www.iec.ch/TC57/CIM#IdentifiedObject> ;
