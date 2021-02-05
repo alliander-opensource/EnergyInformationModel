@@ -5,6 +5,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix eimc: <https://w3id.org/energyinformationmodel/ontology/core#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix eimpc: <https://w3id.org/EnergyInformationModel/ontology/network/primarycomponents#> .
 @base <https://w3id.org/EnergyInformationModel/ontology/network/primarycomponents#> .
 
 <https://w3id.org/EnergyInformationModel/ontology/network/primarycomponents#> rdf:type owl:Ontology ;
@@ -56,21 +57,21 @@
 
 
 ###  https://w3id.org/EnergyInformationModel/ontology/network/primarycomponents#f4817738_268e_47ab_bd9f_070880fa1d9f
-:f4817738_268e_47ab_bd9f_070880fa1d9f rdf:type owl:ObjectProperty ;
-                                      rdfs:subPropertyOf <https://w3id.org/EnergyInformationModel/ontology/core#95194981_485f_4850_b1b3_d6e684529a99> ;
-                                      owl:inverseOf <https://w3id.org/EnergyInformationModel/ontology/network/primarycomponents#78ce8fb9_61e5_4bd3_8453_c93d9da4a6f4> ;
-                                      rdfs:domain <https://w3id.org/EnergyInformationModel/ontology/network/primarycomponents#6b198bd1_3cd5_449b_9447_23f7fa839b52> ;
-                                      rdfs:range <https://w3id.org/EnergyInformationModel/ontology/network/primarycomponents#521235f9_146a_40f6_951a_04f0b06b2aa2> ;
-                                      <http://www.w3.org/2004/02/skos/core#definition> "Relates the Transformer to its TransformerEnds"@en ;
-                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "HasTransformerEnds"@en .
+eimpc:f4817738_268e_47ab_bd9f_070880fa1d9f rdf:type owl:ObjectProperty ;
+                                           rdfs:subPropertyOf <https://w3id.org/EnergyInformationModel/ontology/core#95194981_485f_4850_b1b3_d6e684529a99> ;
+                                           owl:inverseOf <https://w3id.org/EnergyInformationModel/ontology/network/primarycomponents#78ce8fb9_61e5_4bd3_8453_c93d9da4a6f4> ;
+                                           rdfs:domain <https://w3id.org/EnergyInformationModel/ontology/network/primarycomponents#6b198bd1_3cd5_449b_9447_23f7fa839b52> ;
+                                           rdfs:range <https://w3id.org/EnergyInformationModel/ontology/network/primarycomponents#521235f9_146a_40f6_951a_04f0b06b2aa2> ;
+                                           <http://www.w3.org/2004/02/skos/core#definition> "Relates the Transformer to its TransformerEnds"@en ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "HasTransformerEnds"@en .
 
 
 ###  https://w3id.org/EnergyInformationModel/ontology/network/primarycomponents#fbaaff7e_67eb_45b7_882a_1f3d166ab849
-:fbaaff7e_67eb_45b7_882a_1f3d166ab849 rdf:type owl:ObjectProperty ;
-                                      rdfs:domain <https://w3id.org/EnergyInformationModel/ontology/network/primarycomponents#1f327447_2de1_412e_bb40_1e548aed4467> ;
-                                      rdfs:range <https://w3id.org/EnergyInformationModel/ontology/core#defcdc40_e2ec_4174_b9c8_a60992fdb317> ;
-                                      <http://www.w3.org/2004/02/skos/core#definition> "Relates Primary Equipment and TopologicalNodes to the operational envelope at which they are operated"@en ;
-                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "OperatedAt"@en .
+eimpc:fbaaff7e_67eb_45b7_882a_1f3d166ab849 rdf:type owl:ObjectProperty ;
+                                           rdfs:domain <https://w3id.org/EnergyInformationModel/ontology/network/primarycomponents#1f327447_2de1_412e_bb40_1e548aed4467> ;
+                                           rdfs:range <https://w3id.org/EnergyInformationModel/ontology/core#defcdc40_e2ec_4174_b9c8_a60992fdb317> ;
+                                           <http://www.w3.org/2004/02/skos/core#definition> "Relates Primary Equipment and TopologicalNodes to the operational envelope at which they are operated"@en ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "OperatedAt"@en .
 
 
 ###  https://w3id.org/EnergyInformationModel/ontology/network/primarycomponents#4d45d15d_4e95_4ecf_842e_70c49e78afca
@@ -126,12 +127,12 @@ For master data and archival purposes, the DisconnectorStatus should be used"""@
 
 
 ###  https://w3id.org/EnergyInformationModel/ontology/network/primarycomponents#f4574df8_5829_485f_8481_0f5a15a85eac
-:f4574df8_5829_485f_8481_0f5a15a85eac rdf:type owl:Class ;
-                                      rdfs:subClassOf <https://w3id.org/EnergyInformationModel/ontology/network/primarycomponents#1f327447_2de1_412e_bb40_1e548aed4467> ;
-                                      <http://www.w3.org/2004/02/skos/core#definition> "A primary equipment or group of primary equipment with negligible energy loss that serve to connect other primary equipmen and are modelled with a single logical terminal."@en ;
-                                      <http://www.w3.org/2004/02/skos/core#editorialNote> "Generic energy system definition for http://www.iec.ch/TC57/CIM#Connector"@en ;
-                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "Connector"@en ,
-                                                                                      "Koppelfunctie"@nl .
+eimpc:f4574df8_5829_485f_8481_0f5a15a85eac rdf:type owl:Class ;
+                                           rdfs:subClassOf <https://w3id.org/EnergyInformationModel/ontology/network/primarycomponents#1f327447_2de1_412e_bb40_1e548aed4467> ;
+                                           <http://www.w3.org/2004/02/skos/core#definition> "A primary equipment or group of primary equipment with negligible energy loss that serve to connect other primary equipmen and are modelled with a single logical terminal."@en ;
+                                           <http://www.w3.org/2004/02/skos/core#editorialNote> "Generic energy system definition for http://www.iec.ch/TC57/CIM#Connector"@en ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "Connector"@en ,
+                                                                                           "Koppelfunctie"@nl .
 
 
 ###  https://w3id.org/EnergyInformationModel/ontology/network/primarycomponents#1f327447_2de1_412e_bb40_1e548aed4467

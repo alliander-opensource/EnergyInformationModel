@@ -9,7 +9,16 @@
 <https://w3id.org/EnergyInformationModel/ontology/network/topology#> rdf:type owl:Ontology ;
                                                                       owl:imports <https://w3id.org/EnergyInformationModel/ontology/core#> ,
                                                                                   <https://w3id.org/EnergyInformationModel/ontology/network/primarycomponents#> ;
+                                                                      <http://purl.org/dc/terms/license> <https://www.apache.org/licenses/LICENSE-2.0> ;
                                                                       rdfs:comment "Defines the concepts required for topological processing of energy system"@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
 
 #################################################################
 #    Object Properties
