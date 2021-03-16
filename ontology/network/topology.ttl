@@ -20,6 +20,11 @@
 <http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
 
 
+###  https://w3id.org/EnergyInformationModel/ontology/networks/primarycomponents#fbaaff7e_67eb_45b7_882a_1f3d166ab849
+<https://w3id.org/EnergyInformationModel/ontology/networks/primarycomponents#fbaaff7e_67eb_45b7_882a_1f3d166ab849> rdf:type owl:AnnotationProperty ;
+                                                                                                                   rdfs:domain <https://w3id.org/EnergyInformationModel/ontology/network/topology#32b2b3c9_b000_4803_9a7c_e35e7f78b004> .
+
+
 #################################################################
 #    Object Properties
 #################################################################
@@ -29,7 +34,7 @@
                                       owl:inverseOf :f3b1c122_600e_4906_87d5_986a820e6b55 ;
                                       rdfs:domain <https://w3id.org/EnergyInformationModel/ontology/network/topology#32b2b3c9_b000_4803_9a7c_e35e7f78b004> ;
                                       rdfs:range <https://w3id.org/energyinformationmodel/ontology/core#a8bec9fa_deb6_4fe9_8726_0b8b6208fa73> ;
-                                      <http://www.w3.org/2004/02/skos/core#definition> "Relates A topological node to the Terminals at its outer edges. These Terminals typically belong to Disconnectors or Transformers."@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "Relates A topological node to the Terminals at its outer edges. These Terminals typically belong to Disconnectors, Transporters or Transformers."@en ;
                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "HasBoundaryTerminals"@en .
 
 
@@ -39,6 +44,24 @@
                                       rdfs:range <https://w3id.org/EnergyInformationModel/ontology/network/topology#32b2b3c9_b000_4803_9a7c_e35e7f78b004> ;
                                       <http://www.w3.org/2004/02/skos/core#definition> "If a terminal is at the boundary of a Topological Node, thhis relation relates it to that TopologicalNode."@en ;
                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "AtEdgeOfTopologicalNode"@en .
+
+
+###  https://w3id.org/EnergyInformationModel/ontology/network/topology#f8088497_c1ed_4231_addb_d2c4946789f3
+:f8088497_c1ed_4231_addb_d2c4946789f3 rdf:type owl:ObjectProperty ;
+                                      rdfs:subPropertyOf <https://w3id.org/EnergyInformationModel/ontology/core#383fc6ce_402d_4c81_a4e8_dea9613d7a3e> ;
+                                      rdfs:domain <https://w3id.org/EnergyInformationModel/ontology/network/topology#32b2b3c9_b000_4803_9a7c_e35e7f78b004> ;
+                                      rdfs:range <https://w3id.org/EnergyInformationModel/ontology/network/topology#6664d1d8-8635-11eb-8dcd-0242ac130003> ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "The topological Island that this Topological Node is part of"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "PartOfTopologicalIsland"@en .
+
+
+###  https://w3id.org/EnergyInformationModel/ontology/network/topology#3746975e_2078_48eb_861a_379b162c7ae7
+<https://w3id.org/EnergyInformationModel/ontology/network/topology#3746975e_2078_48eb_861a_379b162c7ae7> rdf:type owl:ObjectProperty ;
+                                                                                                         rdfs:subPropertyOf <https://w3id.org/EnergyInformationModel/ontology/core#95194981_485f_4850_b1b3_d6e684529a99> ;
+                                                                                                         rdfs:domain <https://w3id.org/EnergyInformationModel/ontology/network/topology#6664d1d8-8635-11eb-8dcd-0242ac130003> ;
+                                                                                                         rdfs:range <https://w3id.org/EnergyInformationModel/ontology/network/topology#32b2b3c9_b000_4803_9a7c_e35e7f78b004> ;
+                                                                                                         <http://www.w3.org/2004/02/skos/core#definition> "The Topological Nodes that are, or were, part of this Topological Island"@en ;
+                                                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "ContainsTopologicalNodes"@en .
 
 
 ###  https://w3id.org/EnergyInformationModel/ontology/network/topology#689d45a5_bd34_433c_bcdb_d30a46a1f0d9
@@ -58,10 +81,6 @@
                                                                                                          <http://www.w3.org/2004/02/skos/core#prefLabel> "ContainsConnectivityNodes"@en .
 
 
-###  https://w3id.org/EnergyInformationModel/ontology/networks/primarycomponents#fbaaff7e_67eb_45b7_882a_1f3d166ab849
-<https://w3id.org/EnergyInformationModel/ontology/networks/primarycomponents#fbaaff7e_67eb_45b7_882a_1f3d166ab849> rdfs:domain <https://w3id.org/EnergyInformationModel/ontology/network/topology#32b2b3c9_b000_4803_9a7c_e35e7f78b004> .
-
-
 #################################################################
 #    Classes
 #################################################################
@@ -69,9 +88,21 @@
 ###  https://w3id.org/EnergyInformationModel/ontology/network/topology#32b2b3c9_b000_4803_9a7c_e35e7f78b004
 <https://w3id.org/EnergyInformationModel/ontology/network/topology#32b2b3c9_b000_4803_9a7c_e35e7f78b004> rdf:type owl:Class ;
                                                                                                          rdfs:subClassOf <http://www.iec.ch/TC57/CIM#IdentifiedObject> ;
-                                                                                                         <http://www.w3.org/2004/02/skos/core#definition> "A topological node is a set of connectivity nodes that, in the current network state, are connected together through any type of permeable Disconnectors. Topological nodes change as the current network state changes (i.e., switches, valves, etc. change state). Topological Nodes end at Disconenctors or Transformers."@en ;
+                                                                                                         <http://www.w3.org/2004/02/skos/core#definition> """A topological node is a set of connectivity nodes that, in the current network state, are connected together through any type of permeable Disconnectors. Energy loss or modificaion whithin a TopologicalNode are negligable, so we can assume that state variables across a TopologicalNode are constant. Topological nodes change as the current network state changes (i.e., switches, valves, etc. change state). 
+
+Topological nodes allow us to make different kinds of symplifications in our topological model, while always maintaining the relation to the (same) Equipment model through the connectivity nodes. Topologival nodes therefore always  consist of at least one ConnectivitiyNode. 
+
+In a model that has no topological symplifications, each TopologicalNode represents exactly one ConnectivityNode"""@en ;
                                                                                                          <http://www.w3.org/2004/02/skos/core#editorialNote> "Generic energy system definition of http://www.iec.ch/TC57/CIM#TopologicalNode."@en ;
                                                                                                          <http://www.w3.org/2004/02/skos/core#prefLabel> "TopologicalNode"@en .
+
+
+###  https://w3id.org/EnergyInformationModel/ontology/network/topology#6664d1d8-8635-11eb-8dcd-0242ac130003
+<https://w3id.org/EnergyInformationModel/ontology/network/topology#6664d1d8-8635-11eb-8dcd-0242ac130003> rdf:type owl:Class ;
+                                                                                                         rdfs:subClassOf <http://www.iec.ch/TC57/CIM#IdentifiedObject> ;
+                                                                                                         <http://www.w3.org/2004/02/skos/core#definition> "An energetically connected subset of a network. TopologicalIslands change as the current network state changes, due to changing possitions of Disconenctors. They may also be manually created in a planning tool. Only energized topological nodes can be part of the TopologicalIsland."@en ;
+                                                                                                         <http://www.w3.org/2004/02/skos/core#editorialNote> "Generic Definition of http://www.iec.ch/TC57/CIM#TopologicalIsland"@en ;
+                                                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "TopologicalIsland"@en .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
